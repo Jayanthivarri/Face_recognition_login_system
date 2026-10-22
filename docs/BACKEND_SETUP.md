@@ -4,45 +4,6 @@
 
 This guide explains all the backend foundation files that have been generated and how they work together.
 
-## 🗂️ File Structure
-
-```
-backend/
-├── app/
-│   ├── __init__.py                    # App package initialization
-│   ├── main.py                        # FastAPI application setup
-│   ├── database/
-│   │   ├── __init__.py
-│   │   ├── base.py                    # SQLAlchemy declarative base
-│   │   ├── config.py                  # Database connection config
-│   │   └── session.py                 # Session management
-│   ├── models/
-│   │   ├── __init__.py
-│   │   └── user.py                    # User ORM model
-│   ├── schemas/
-│   │   ├── __init__.py
-│   │   ├── user.py                    # Pydantic models (requests/responses)
-│   │   └── response.py                # Common response schemas
-│   ├── services/
-│   │   └── __init__.py                # Services placeholder
-│   ├── routers/
-│   │   └── __init__.py                # Routers placeholder
-│   └── utils/
-│       ├── __init__.py
-│       ├── exceptions.py              # Custom exception classes
-│       ├── validators.py              # Input validation functions
-│       ├── helpers.py                 # Helper utilities
-│       └── constants.py               # Application constants
-├── tests/
-│   ├── conftest.py                    # Pytest configuration and fixtures
-│   ├── unit/                          # Unit tests
-│   └── integration/                   # Integration tests
-├── requirements.txt                   # Python dependencies
-├── .env.example                       # Environment variables template
-├── pytest.ini                         # Pytest configuration
-├── run.py                             # Application entry point
-└── README.md                          # Backend README
-```
 
 ## 📦 Key Files Explained
 
